@@ -92,7 +92,7 @@ module.exports = async (req, res) => {
 
       // ✅ 3. Change Apply Now button URL
       body = body.split(
-        "https://remotejobs.victorytuitions.in"
+        "https://remotejobs.victorytuitions.in/job/remote-customer-service-representative-arenaflex-customer-support-center-up-to-35hour-work-from-home-opportunity/"
       ).join(
         "https://remotejob09.job4intern.com/pages/job-application"
       );
