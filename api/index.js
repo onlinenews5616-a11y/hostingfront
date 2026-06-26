@@ -90,24 +90,21 @@ module.exports = async (req, res) => {
         .split("frontendnode-oufb-production.up.railway.app").join("Remote Jobs")
         .split("HireZilla").join("Remote Jobs");
 
-      // ✅ 3. Change Apply Now button URL
-      body = body.split(
-        "https://remotejobs.victorytuitions.in/job/remote-customer-service-representative-arenaflex-customer-support-center-up-to-35hour-work-from-home-opportunity/"
-      ).join(
-        "https://remotejob09.job4intern.com/pages/job-application"
-      );
-
-      // Also catch any other apply links pointing to thetodayupdate.com
-      body = body.replace(
-        /https:\/\/remote\.thetodayupdate\.com[^"'\s]*/g,
-        "https://remotejob09.job4intern.com/pages/job-application"
-      );
-
-      // Also catch remotejobs.trendingnewsgo.com apply links
-      body = body.replace(
-        /https:\/\/remotejobs\.trendingnewsgo\.com[^"'\s]*/g,
-        "https://remotejob09.job4intern.com/pages/job-application"
-      );
+     // ✅ 3. Change Apply Now button URL
+body = body.replace(
+  /https:\/\/remotejobs\.victorytuitions\.in\/job\/[^"'\s]*/g,
+  "https://remotejob09.job4intern.com/pages/job-application"
+);
+// Also catch any other apply links pointing to thetodayupdate.com
+body = body.replace(
+  /https:\/\/remote\.thetodayupdate\.com[^"'\s]*/g,
+  "https://remotejob09.job4intern.com/pages/job-application"
+);
+// Also catch remotejobs.trendingnewsgo.com apply links
+body = body.replace(
+  /https:\/\/remotejobs\.trendingnewsgo\.com[^"'\s]*/g,
+  "https://remotejobs09.job4intern.com/pages/job-application"
+);
 
       // ✅ 4. Inject custom CSS to change colors and design
       const customCSS = `
