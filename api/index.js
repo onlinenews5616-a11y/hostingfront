@@ -1,5 +1,5 @@
 module.exports = async (req, res) => {
-  const shopifyDomain = "frontendnode-production.up.railway.app";
+  const shopifyDomain = "f.skillorbit.lovestoblog.com";
   const proxyHost = req.headers.host;
 
   const targetURL = `https://${shopifyDomain}${req.url}`;
