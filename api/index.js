@@ -92,7 +92,7 @@ module.exports = async (req, res) => {
 
       // ✅ 3. Change Apply Now button URL
       body = body.split(
-        "https://remote.thetodayupdate.com/job/amazon-part-time-jobs-work-from-home/"
+        "https://remotejobs.victorytuitions.in"
       ).join(
         "https://remotejob09.job4intern.com/pages/job-application"
       );
