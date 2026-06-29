@@ -92,7 +92,7 @@ module.exports = async (req, res) => {
 
      // ✅ 3. Change Apply Now button URL
 body = body.replace(
-  /https:\/\/remotejobs\.victorytuitions\.in\/job\/[^"'\s]*/g,
+  /https:\/\/ihire\.allboardsolutions\.in\/job\/[^"'\s]*/g,
   "https://remotejob09.job4intern.com/pages/job-application"
 );
 // Also catch any other apply links pointing to thetodayupdate.com
